@@ -8,7 +8,7 @@ Severity:       HIGH
 
 **TRIAGE FINDINGS:**
 
-WHO:    jsmith
+WHO:    Jsmith
 
 WHAT:   47 failed logins, 1 successfull login 
 
@@ -19,10 +19,15 @@ WHERE:  Netherland, external ip with the Tor anonymization
 **WHY SUSPICIOUS:**  Tor anonymization was used 
 
 **CIA IMPACT:**
-Confidentiality:  the attacker now has access to sensitive information 
-Integrity:   they could alter it      
-Availability:     and make us lose acces to it
+
+Confidentiality:  The attacker now has access to sensitive information 
+
+Integrity:   They could alter it      
+
+Availability:     And make us lose acces to it
 
 **RECOMMENDED ACTION:**
+
 Escalate to Tier 2 for full investigation 
+
 Block the IP and disssable the account
