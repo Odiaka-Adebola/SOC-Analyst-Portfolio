@@ -7,9 +7,13 @@ Severity:       HIGH
 **SUMMARY: A successful bruteforce attack on jsmiths account. it happened on the worskstation 047 and could lead to severe damage.** 
 
 **TRIAGE FINDINGS:**
+
 WHO:    jsmith
+
 WHAT:   47 failed logins, 1 successfull login 
+
 WHEN:   (2:58)-(3:17) UTC
+
 WHERE:  Netherland, external ip with the Tor anonymization
 
 **WHY SUSPICIOUS:**  Tor anonymization was used 
