@@ -4,7 +4,7 @@ Analyst:       Odiaka Adebola
 Date:           2026-05-18
 Severity:       HIGH
 
-** SUMMARY: A successful bruteforce attack on jsmiths account. it happened on the worskstation 047 and could lead to severe damage.  
+** SUMMARY: A successful bruteforce attack on jsmiths account. it happened on the worskstation 047 and could lead to severe damage. ** 
 
 **TRIAGE FINDINGS:
 WHO:    jsmith
