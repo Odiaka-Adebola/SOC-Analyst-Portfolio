@@ -1,7 +1,9 @@
 # LAB REPORT — Wireshark DNS Traffic Analysis
-===============================================
+
 Analyst:     Odiaka Adebola Favour
+
 Date:        2026-05-20
+
 Environment: Kali Linux — VirtualBox
 
 ## Objective
