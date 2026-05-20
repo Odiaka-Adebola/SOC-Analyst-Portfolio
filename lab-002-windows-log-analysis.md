@@ -57,22 +57,22 @@ IP. Context determines verdict.
 **Event IDs captured:** 4720, 4732, 4726
 
 **What I did:**
-Created a new user account called hackersim
+Created a new user account called Debola
 using net user command, added it to the
 Administrators group, then deleted it.
 
 **What I observed in logs:**
-- Event ID 4720: hackersim account created
+- Event ID 4720: Debola account created
   by Debola. Password not required. Never
   expires. Immediate red flag.
 
 ![User Account Created Log](images/acccount%20created.png)
 
-- Event ID 4732: hackersim added to Users
+- Event ID 4732: Debola added to Users
   group then Administrators group.
   Full privilege escalation confirmed.
 
-- Event ID 4726: hackersim account deleted.
+- Event ID 4726: Debola account deleted.
   Attacker covering tracks — but Windows
   logged the deletion anyway.
 
