@@ -21,13 +21,16 @@ Simulate a network reconnaissance scan from an attacker machine (Kali Linux) and
 
 **Scan Discovery:** The Nmap scan enumerated the target's attack surface, identifying **Port 3389** as open and actively probing it to fingerprint the version information of the underlying Remote Desktop Protocol (RDP) service.
 
+### Attacker Perspective (CLI Telemetry):
+![Nmap Network Service Scan](images/nmap%20scan.png)
+
 ---
 
 ## Detection & Telemetry (Defender Side)
 
 Reviewing the Windows Event Viewer under the Security log, the reconnaissance scan triggered active logging of the connection attempts.
 
-### Windows Security Telemetry Artifact:
+### Defender Perspective (Windows Filtering Platform Artifact):
 ![Windows Filtering Platform Connection Log](images/windows%205156.png)
 
 ### Core Log Attributes:
