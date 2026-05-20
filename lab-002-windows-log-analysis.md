@@ -20,9 +20,9 @@ appear in raw Windows Security logs.
   Success and Failure
 
 ### Policy Configuration Proof:
-![Enabling Audit Account Management](windows%20audit%20succcess%20and%20failiur.png)
+![Enabling Audit Account Management](images/windows%20audit%20succcess%20and%20failiur.png)
 
-![Local Security Policy Audit Settings](success%20and%20failiure.png)
+![Local Security Policy Audit Settings](images/success%20and%20failiure.png)
 
 ---
 
@@ -43,7 +43,7 @@ login) under account name Debola.
 Source address was 127.0.0.1 confirming
 local interactive login. Logon Type 2.
 
-![Failed Logon Event Log](event%20veiw.jpg)
+![Failed Logon Event Log](images/event%20veiw.png)
 
 **Analyst note:**
 Same event sequence as a real brute force
@@ -66,7 +66,7 @@ Administrators group, then deleted it.
   by Debola. Password not required. Never
   expires. Immediate red flag.
 
-![User Account Created Log](acccount%20created.jpg)
+![User Account Created Log](images/acccount%20created.png)
 
 - Event ID 4732: hackersim added to Users
   group then Administrators group.
@@ -76,7 +76,7 @@ Administrators group, then deleted it.
   Attacker covering tracks — but Windows
   logged the deletion anyway.
 
-![User Account Deleted Log](accout%20deleted.jpg)
+![User Account Deleted Log](images/accout%20deleted.png)
 
 **Analyst note:**
 This mirrors real attacker persistence
@@ -130,6 +130,3 @@ generated and captured in Windows Security
 logs. This lab confirms that proper audit
 policy configuration is the foundation of
 any effective SOC detection capability.
-
-### Network Traffic Telemetry (Bonus Verification)
-![Inbound RDP Network Connection Log](windows%205156.png)
