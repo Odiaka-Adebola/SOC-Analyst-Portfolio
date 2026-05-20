@@ -1,7 +1,9 @@
 # LAB REPORT — Windows Log Analysis
-======================================
+
 Analyst:     Odiaka Adebola Favour
+
 Date:        2026-05-20
+
 Environment: Windows 11 — VirtualBox
 
 ## Objective
@@ -16,6 +18,13 @@ appear in raw Windows Security logs.
   Logon Events, Account Management,
   Process Tracking — all set to
   Success and Failure
+
+### Policy Configuration Proof:
+![Enabling Audit Account Management](windows%20audit%20succcess%20and%20failiur.png)
+
+![Local Security Policy Audit Settings](success%20and%20failiure.png)
+
+---
 
 ## Scenarios Executed
 
@@ -33,6 +42,8 @@ followed by 1 x Event ID 4624 (successful
 login) under account name Debola.
 Source address was 127.0.0.1 confirming
 local interactive login. Logon Type 2.
+
+![Failed Logon Event Log](event%20veiw.jpg)
 
 **Analyst note:**
 Same event sequence as a real brute force
@@ -54,12 +65,18 @@ Administrators group, then deleted it.
 - Event ID 4720: hackersim account created
   by Debola. Password not required. Never
   expires. Immediate red flag.
+
+![User Account Created Log](acccount%20created.jpg)
+
 - Event ID 4732: hackersim added to Users
   group then Administrators group.
   Full privilege escalation confirmed.
+
 - Event ID 4726: hackersim account deleted.
   Attacker covering tracks — but Windows
   logged the deletion anyway.
+
+![User Account Deleted Log](accout%20deleted.jpg)
 
 **Analyst note:**
 This mirrors real attacker persistence
@@ -113,3 +130,6 @@ generated and captured in Windows Security
 logs. This lab confirms that proper audit
 policy configuration is the foundation of
 any effective SOC detection capability.
+
+### Network Traffic Telemetry (Bonus Verification)
+![Inbound RDP Network Connection Log](windows%205156.png)
