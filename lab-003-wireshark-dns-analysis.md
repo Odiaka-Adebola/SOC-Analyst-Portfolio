@@ -27,7 +27,7 @@ real attacks.
 ### Normal DNS Behavior Observed
 Using the terminal on Kali Linux, lookups were generated for various domains to capture baseline traffic:
 
-![Kali Linux Terminal DNS Queries](images/Nslookup.jpg)
+![Kali Linux Terminal DNS Queries](images/Nslookup.png)
 
 Key observations from raw Wireshark captures:
 - Protocol: UDP
@@ -40,7 +40,7 @@ Key observations from raw Wireshark captures:
 - google.com resolved to 142.251.216.46
 - Total packets for 3 lookups: 12
 
-![Wireshark Normal DNS Traffic Capture](images/dns%20query.jpg)
+![Wireshark Normal DNS Traffic Capture](images/dns%20query.png)
 
 **Why UDP:**
 DNS uses UDP because queries are small
