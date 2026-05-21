@@ -1,0 +1,158 @@
+timestamp,log_source,event_id,event_type,hostname,source_ip,destination_ip,source_port,destination_port,protocol,username,process_name,command_line,status,bytes_sent,bytes_received,description
+2026-05-12 00:01:03,Windows-Security,4624,Successful Login,WS-FIN-04,10.10.1.5,,49201,445,TCP,john.adeyemi,,,SUCCESS,,,Normal business hours login
+2026-05-12 00:03:22,Windows-Security,4624,Successful Login,WS-HR-01,10.10.1.8,,49205,445,TCP,amina.bello,,,SUCCESS,,,Normal business hours login
+2026-05-12 00:05:11,Windows-Security,4624,Successful Login,WS-IT-02,10.10.1.12,,49210,445,TCP,chidi.okonkwo,,,SUCCESS,,,Normal business hours login
+2026-05-12 00:07:44,Firewall,,,FW-01,10.10.1.5,8.8.8.8,52001,53,UDP,,,,,512,128,DNS query to Google DNS
+2026-05-12 00:08:15,Firewall,,,FW-01,10.10.1.8,8.8.8.8,52010,53,UDP,,,,,512,128,DNS query to Google DNS
+2026-05-12 00:09:02,Windows-Security,4688,Process Created,WS-FIN-04,10.10.1.5,,,,TCP,john.adeyemi,chrome.exe,chrome.exe --profile-directory=Default,SUCCESS,,,Chrome browser launched
+2026-05-12 00:10:33,Windows-Security,4688,Process Created,WS-HR-01,10.10.1.8,,,,TCP,amina.bello,excel.exe,excel.exe C:\HR\Payroll_2026.xlsx,SUCCESS,,,Excel opened by HR user
+2026-05-12 00:11:45,DNS,,,DNS-01,10.10.1.5,,,53,UDP,,,,,,,DNS query: www.google.com resolved 142.250.185.78
+2026-05-12 00:12:10,DNS,,,DNS-01,10.10.1.8,,,53,UDP,,,,,,,DNS query: mail.google.com resolved 142.250.185.83
+2026-05-12 00:13:29,Windows-Security,4624,Successful Login,WS-ACCT-03,10.10.1.20,,49230,445,TCP,tunde.fashola,,,SUCCESS,,,Normal login
+2026-05-12 00:14:50,Firewall,,,FW-01,10.10.1.5,142.250.185.78,52100,443,TCP,,,,,1024,4096,HTTPS traffic to Google
+2026-05-12 00:16:03,Windows-Security,4624,Successful Login,WS-FIN-04,10.10.1.5,,49240,445,TCP,john.adeyemi,,,SUCCESS,,,Second login session
+2026-05-12 00:17:22,Antivirus,,,WS-FIN-04,10.10.1.5,,,,,john.adeyemi,,,CLEAN,,,Scheduled AV scan completed no threats
+2026-05-12 00:18:44,Windows-Security,4634,Logoff,WS-IT-02,10.10.1.12,,,,TCP,chidi.okonkwo,,,SUCCESS,,,Normal logoff
+2026-05-12 00:19:55,DNS,,,DNS-01,10.10.1.20,,,53,UDP,,,,,,,DNS query: outlook.office365.com resolved 52.97.128.52
+2026-05-12 00:20:11,Firewall,,,FW-01,10.10.1.20,52.97.128.52,53001,443,TCP,,,,,2048,8192,HTTPS traffic to Office 365
+2026-05-12 00:22:33,Windows-Security,4688,Process Created,WS-ACCT-03,10.10.1.20,,,,TCP,tunde.fashola,OUTLOOK.EXE,OUTLOOK.EXE /recycle,SUCCESS,,,Outlook launched
+2026-05-12 00:24:01,Windows-Security,4624,Successful Login,WS-MGR-01,10.10.1.33,,49270,445,TCP,ngozi.eze,,,SUCCESS,,,Manager login
+2026-05-12 00:25:15,Firewall,,,FW-01,10.10.1.33,52.97.128.52,53010,443,TCP,,,,,3072,12288,HTTPS to Office 365
+2026-05-12 00:27:44,DNS,,,DNS-01,10.10.1.5,,,53,UDP,,,,,,,DNS query: docs.google.com resolved 142.250.185.90
+2026-05-12 00:29:03,Windows-Security,4688,Process Created,WS-FIN-04,10.10.1.5,,,,TCP,john.adeyemi,EXCEL.EXE,EXCEL.EXE C:\Finance\Budget_2026.xlsx,SUCCESS,,,Excel opened finance file
+2026-05-12 00:31:20,Windows-Security,4634,Logoff,WS-HR-01,10.10.1.8,,,,TCP,amina.bello,,,SUCCESS,,,Normal logoff
+2026-05-12 00:33:45,Firewall,,,FW-01,10.10.1.5,142.250.185.90,52200,443,TCP,,,,,1024,2048,HTTPS to Google Docs
+2026-05-12 00:35:11,Windows-Security,4624,Successful Login,WS-HR-01,10.10.1.8,,49310,445,TCP,amina.bello,,,SUCCESS,,,Re-login after break
+2026-05-12 00:37:29,DNS,,,DNS-01,10.10.1.33,,,53,UDP,,,,,,,DNS query: teams.microsoft.com resolved 52.113.194.132
+2026-05-12 00:39:00,Firewall,,,FW-01,10.10.1.33,52.113.194.132,53020,443,TCP,,,,,4096,16384,MS Teams traffic
+2026-05-12 00:41:15,Windows-Security,4688,Process Created,WS-MGR-01,10.10.1.33,,,,TCP,ngozi.eze,Teams.exe,Teams.exe,SUCCESS,,,MS Teams launched
+2026-05-12 00:43:30,Windows-Security,4634,Logoff,WS-FIN-04,10.10.1.5,,,,TCP,john.adeyemi,,,SUCCESS,,,End of normal session
+2026-05-12 00:45:00,Firewall,,,FW-01,10.10.1.20,52.97.128.52,53030,443,TCP,,,,,1024,4096,HTTPS to Office 365
+2026-05-12 00:47:22,Windows-Security,4624,Successful Login,WS-FIN-04,10.10.1.5,,49350,445,TCP,john.adeyemi,,,SUCCESS,,,Normal login
+2026-05-12 00:49:44,DNS,,,DNS-01,10.10.1.8,,,53,UDP,,,,,,,DNS query: slack.com resolved 54.230.149.50
+2026-05-12 00:51:03,Firewall,,,FW-01,10.10.1.8,54.230.149.50,52300,443,TCP,,,,,2048,8192,Slack traffic
+2026-05-12 00:53:21,Windows-Security,4634,Logoff,WS-ACCT-03,10.10.1.20,,,,TCP,tunde.fashola,,,SUCCESS,,,Normal logoff
+2026-05-12 00:55:40,Windows-Security,4634,Logoff,WS-MGR-01,10.10.1.33,,,,TCP,ngozi.eze,,,SUCCESS,,,Normal logoff
+2026-05-12 00:57:55,Antivirus,,,WS-HR-01,10.10.1.8,,,,,amina.bello,,,CLEAN,,,Scheduled AV scan no threats
+2026-05-12 01:00:00,Windows-Security,4634,Logoff,WS-FIN-04,10.10.1.5,,,,TCP,john.adeyemi,,,SUCCESS,,,End of session before midnight
+2026-05-12 01:00:15,Windows-Security,4634,Logoff,WS-HR-01,10.10.1.8,,,,TCP,amina.bello,,,SUCCESS,,,End of session
+2026-05-12 01:01:00,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54800,3389,TCP,,,,,,,Inbound RDP connection attempt from external IP
+2026-05-12 01:01:05,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54801,3389,TCP,,,,,,,Inbound RDP connection attempt from external IP
+2026-05-12 01:01:10,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54802,3389,TCP,,,,,,,Inbound RDP connection attempt from external IP
+2026-05-12 01:01:18,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54803,3389,TCP,,,,,,,Inbound RDP connection attempt from external IP
+2026-05-12 01:01:25,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54804,3389,TCP,,,,,,,Inbound RDP connection attempt from external IP
+2026-05-12 01:02:00,IDS,,,IDS-01,185.220.101.12,192.168.1.25,54804,3389,TCP,,,,,,,ALERT: Port scan detected from 185.220.101.12 targeting RDP
+2026-05-12 01:02:14,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54805,3389,TCP,,,,,,,Inbound RDP connection attempt from external IP
+2026-05-12 01:02:22,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54806,3389,TCP,,,,,,,Inbound RDP connection attempt from external IP
+2026-05-12 01:02:31,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54807,3389,TCP,,,,,,,Inbound RDP connection attempt from external IP
+2026-05-12 01:02:40,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54808,3389,TCP,,,,,,,Inbound RDP connection attempt from external IP
+2026-05-12 01:02:49,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54809,3389,TCP,,,,,,,Inbound RDP connection attempt from external IP
+2026-05-12 01:03:00,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54810,3389,TCP,,,,,,,Inbound RDP SYN ESTABLISHED
+2026-05-12 01:13:55,Firewall,,,FW-01,185.220.101.12,192.168.1.25,54821,3389,TCP,,,,,,,Inbound RDP ESTABLISHED session begins
+2026-05-12 01:14:22,Windows-Security,4625,Failed Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,FAILURE,,,Wrong password attempt 1
+2026-05-12 01:14:35,Windows-Security,4625,Failed Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,FAILURE,,,Wrong password attempt 2
+2026-05-12 01:14:48,Windows-Security,4625,Failed Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,FAILURE,,,Wrong password attempt 3
+2026-05-12 01:15:01,Windows-Security,4625,Failed Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,FAILURE,,,Wrong password attempt 4
+2026-05-12 01:15:14,Windows-Security,4625,Failed Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,FAILURE,,,Wrong password attempt 5
+2026-05-12 01:15:27,Windows-Security,4625,Failed Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,FAILURE,,,Wrong password attempt 6
+2026-05-12 01:15:40,Windows-Security,4625,Failed Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,FAILURE,,,Wrong password attempt 7
+2026-05-12 01:15:53,Windows-Security,4625,Failed Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,FAILURE,,,Wrong password attempt 8
+2026-05-12 01:16:06,Windows-Security,4625,Failed Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,FAILURE,,,Wrong password attempt 9
+2026-05-12 01:16:19,Windows-Security,4625,Failed Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,FAILURE,,,Wrong password attempt 10
+2026-05-12 01:16:32,Windows-Security,4624,Successful Login,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,SUCCESS,,,ATTACKER GAINED ACCESS via RDP brute force
+2026-05-12 01:16:32,ActiveDirectory,4624,Successful Login,DC-01,185.220.101.12,,54821,3389,TCP,finance-admin,,,SUCCESS,,,Kerberos ticket granted for finance-admin from external IP
+2026-05-12 01:16:45,Windows-Security,4672,Special Privileges Assigned,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,,,SUCCESS,,,SeDebugPrivilege SeImpersonatePrivilege assigned to session
+2026-05-12 01:17:03,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,powershell.exe,powershell.exe -ExecutionPolicy Bypass -enc JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0AA==,SUCCESS,,,Encoded PowerShell executed - SUSPICIOUS
+2026-05-12 01:17:04,Antivirus,,,WS-FIN-04,185.220.101.12,,,,,finance-admin,powershell.exe,,ALERT,,,HIGH: Suspicious PowerShell Base64 encoded command detected
+2026-05-12 01:17:04,Antivirus,,,WS-FIN-04,185.220.101.12,,,,,finance-admin,powershell.exe,,ALERT,,,HIGH: Decoded payload contains TCPClient reverse shell indicators
+2026-05-12 01:17:05,DNS,,,DNS-01,192.168.1.25,,,53,UDP,,,,,,,DNS query: api.dropboxusercontent.com resolved 162.125.6.1
+2026-05-12 01:17:06,Firewall,,,FW-01,192.168.1.25,162.125.6.1,49300,443,TCP,,,,,512,,Outbound HTTPS to Dropbox - C2 beacon suspected
+2026-05-12 01:17:08,DNS,,,DNS-01,192.168.1.25,,,53,UDP,,,,,,,DNS query: content.dropboxapi.com resolved 162.125.6.5
+2026-05-12 01:17:11,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c whoami,SUCCESS,,,Reconnaissance command executed
+2026-05-12 01:17:14,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c ipconfig /all,SUCCESS,,,Network reconnaissance
+2026-05-12 01:17:18,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c systeminfo,SUCCESS,,,System information gathering
+2026-05-12 01:17:22,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c net user /domain,SUCCESS,,,Domain user enumeration
+2026-05-12 01:17:25,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c net group "Domain Admins" /domain,SUCCESS,,,Domain admin group enumeration
+2026-05-12 01:17:30,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c net localgroup administrators,SUCCESS,,,Local admin group enumeration
+2026-05-12 01:17:35,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c arp -a,SUCCESS,,,ARP table enumeration - mapping internal hosts
+2026-05-12 01:17:40,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c route print,SUCCESS,,,Routing table enumeration
+2026-05-12 01:17:45,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c netstat -ano,SUCCESS,,,Active network connections enumeration
+2026-05-12 01:17:50,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c tasklist /v,SUCCESS,,,Running processes enumeration
+2026-05-12 01:17:55,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c dir C:\Users\ /b,SUCCESS,,,User directory enumeration
+2026-05-12 01:18:00,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c dir C:\Finance\ /s /b,SUCCESS,,,Finance directory enumeration
+2026-05-12 01:18:02,Firewall,,,FW-01,192.168.1.25,192.168.1.30,49210,445,TCP,,,,,,,Lateral movement: SMB connection to internal host 192.168.1.30
+2026-05-12 01:18:05,Windows-Security,4624,Successful Login,WS-IT-03,192.168.1.25,,49210,445,TCP,finance-admin,,,SUCCESS,,,Lateral movement login to IT workstation
+2026-05-12 01:18:10,Firewall,,,FW-01,192.168.1.25,192.168.1.35,49211,445,TCP,,,,,,,Lateral movement: SMB connection to internal host 192.168.1.35
+2026-05-12 01:18:15,Windows-Security,4624,Successful Login,WS-FIN-02,192.168.1.25,,49211,445,TCP,finance-admin,,,SUCCESS,,,Lateral movement login to Finance workstation
+2026-05-12 01:18:19,Firewall,,,FW-01,192.168.1.25,192.168.1.45,49215,445,TCP,,,,,,,Lateral movement: SMB connection to internal host 192.168.1.45
+2026-05-12 01:18:22,Windows-Security,4624,Successful Login,WS-FIN-05,192.168.1.25,,49215,445,TCP,finance-admin,,,SUCCESS,,,Lateral movement login
+2026-05-12 01:18:28,Firewall,,,FW-01,192.168.1.25,192.168.1.60,49220,445,TCP,,,,,,,Lateral movement: SMB connection to internal host 192.168.1.60
+2026-05-12 01:18:33,Windows-Security,4624,Successful Login,SRV-FILE-01,192.168.1.25,,49220,445,TCP,finance-admin,,,SUCCESS,,,Lateral movement to FILE SERVER - HIGH SEVERITY
+2026-05-12 01:18:40,Firewall,,,FW-01,192.168.1.25,192.168.1.75,49225,3389,TCP,,,,,,,Lateral movement: RDP connection to internal host 192.168.1.75
+2026-05-12 01:18:45,Windows-Security,4624,Successful Login,WS-MGR-02,192.168.1.25,,49225,3389,TCP,finance-admin,,,SUCCESS,,,Lateral movement to Manager workstation
+2026-05-12 01:18:50,IDS,,,IDS-01,192.168.1.25,192.168.1.0/24,,,TCP,,,,,,,ALERT: Internal host scanning multiple SMB targets - lateral movement suspected
+2026-05-12 01:19:05,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,powershell.exe,powershell.exe -c "Invoke-Mimikatz -Command 'privilege::debug sekurlsa::logonpasswords'",SUCCESS,,,CRITICAL: Credential dumping tool executed
+2026-05-12 01:19:08,Antivirus,,,WS-FIN-04,185.220.101.12,,,,,finance-admin,powershell.exe,,ALERT,,,CRITICAL: Mimikatz credential dumping detected - process blocked
+2026-05-12 01:19:10,Windows-Security,4720,User Account Created,DC-01,192.168.1.25,,,,TCP,finance-admin,,,SUCCESS,,,New account created: svc_backup2
+2026-05-12 01:19:15,Windows-Security,4732,Member Added to Group,DC-01,192.168.1.25,,,,TCP,finance-admin,,,SUCCESS,,,svc_backup2 added to Administrators group - PERSISTENCE
+2026-05-12 01:19:20,ActiveDirectory,4720,User Account Created,DC-01,192.168.1.25,,,,TCP,finance-admin,,,SUCCESS,,,LDAP WRITE: CN=svc_backup2 created in OU=Service Accounts
+2026-05-12 01:19:25,ActiveDirectory,4732,Group Modified,DC-01,192.168.1.25,,,,TCP,finance-admin,,,SUCCESS,,,LDAP WRITE: svc_backup2 added to CN=Administrators group
+2026-05-12 01:19:30,Windows-Security,4624,Successful Login,WS-FIN-04,192.168.1.25,,49230,3389,TCP,svc_backup2,,,SUCCESS,,,New backdoor account logged in immediately after creation
+2026-05-12 01:19:35,Windows-Security,4672,Special Privileges Assigned,WS-FIN-04,192.168.1.25,,,,TCP,svc_backup2,,,SUCCESS,,,Admin privileges assigned to new backdoor account
+2026-05-12 01:20:00,ActiveDirectory,4624,Kerberos Auth,DC-01,192.168.1.25,,,,TCP,svc_backup2,,,SUCCESS,,,Kerberos ticket granted for backdoor account svc_backup2
+2026-05-12 01:20:10,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,reg.exe,"reg.exe add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v Updater /t REG_SZ /d C:\Windows\Temp\update.exe",SUCCESS,,,Registry persistence key added
+2026-05-12 01:20:15,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,schtasks.exe,"schtasks.exe /create /tn SystemUpdate /tr C:\Windows\Temp\update.exe /sc onlogon /ru SYSTEM",SUCCESS,,,Scheduled task created for persistence
+2026-05-12 01:20:22,Windows-Security,4688,Process Created,SRV-FILE-01,192.168.1.25,,,,TCP,finance-admin,cmd.exe,cmd.exe /c dir \\SRV-FILE-01\Finance /s /b > C:\Temp\filelist.txt,SUCCESS,,,File server enumeration from lateral movement
+2026-05-12 01:20:30,Windows-Security,4688,Process Created,SRV-FILE-01,192.168.1.25,,,,TCP,finance-admin,cmd.exe,cmd.exe /c copy \\SRV-FILE-01\Finance\Q1_Reports C:\Temp\,SUCCESS,,,Copying finance data to staging directory
+2026-05-12 01:20:45,Windows-Security,4688,Process Created,SRV-FILE-01,192.168.1.25,,,,TCP,finance-admin,cmd.exe,cmd.exe /c copy \\SRV-FILE-01\Finance\Q2_Reports C:\Temp\,SUCCESS,,,Copying finance data to staging directory
+2026-05-12 01:21:00,Windows-Security,4688,Process Created,SRV-FILE-01,192.168.1.25,,,,TCP,finance-admin,cmd.exe,cmd.exe /c copy \\SRV-FILE-01\Finance\Payroll_2026 C:\Temp\,SUCCESS,,,CRITICAL: Payroll data being staged for exfiltration
+2026-05-12 01:21:10,Windows-Security,4688,Process Created,SRV-FILE-01,192.168.1.25,,,,TCP,finance-admin,cmd.exe,cmd.exe /c copy \\SRV-FILE-01\Finance\BankDetails C:\Temp\,SUCCESS,,,CRITICAL: Bank details being staged for exfiltration
+2026-05-12 01:21:20,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c copy \\SRV-FILE-01\Finance\ExecutiveReports C:\Temp\,SUCCESS,,,Executive reports staged for exfiltration
+2026-05-12 01:21:44,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,rar.exe,"rar.exe a -hp -r C:\Windows\Temp\archive.rar C:\Temp\*.*",SUCCESS,,,Data archiving with password protection before exfil
+2026-05-12 01:21:44,Antivirus,,,WS-FIN-04,185.220.101.12,,,,,finance-admin,rar.exe,,ALERT,,,CRITICAL: Sensitive data archiving detected - Finance folder targeted
+2026-05-12 01:21:48,DNS,,,DNS-01,192.168.1.25,,,53,UDP,,,,,,,DNS query: 45.77.22.91.nip.io resolved 45.77.22.91
+2026-05-12 01:21:49,DNS,,,DNS-01,192.168.1.25,,,53,UDP,,,,,,,DNS query: update.microsoft-cdn.net resolved 45.77.22.91 - SUSPICIOUS domain masquerading as Microsoft
+2026-05-12 01:21:50,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49301,443,TCP,,,,,847204312,,CRITICAL: Large data upload to external IP 45.77.22.91 - possible exfiltration
+2026-05-12 01:21:55,Antivirus,,,WS-FIN-04,192.168.1.25,45.77.22.91,,,TCP,finance-admin,,,ALERT,,,CRITICAL: Large outbound data transfer detected 847MB to unknown external host
+2026-05-12 01:22:10,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49302,443,TCP,,,,,524100008,,CRITICAL: Second large upload to 45.77.22.91 - exfiltration continuing
+2026-05-12 01:22:30,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49303,443,TCP,,,,,312000000,,CRITICAL: Third data upload to attacker server 45.77.22.91
+2026-05-12 01:22:50,IDS,,,IDS-01,192.168.1.25,45.77.22.91,49301,443,TCP,,,,,,,ALERT: Data exfiltration signature matched - total volume exceeds 1.5GB threshold
+2026-05-12 01:23:00,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c del /f /q C:\Temp\*.* && del /f /q C:\Windows\Temp\archive.rar,SUCCESS,,,Attacker deleting staging files to cover tracks
+2026-05-12 01:23:10,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c wevtutil cl Security,SUCCESS,,,CRITICAL: Windows Security event log cleared by attacker
+2026-05-12 01:23:15,Windows-Security,4688,Process Created,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,cmd.exe,cmd.exe /c wevtutil cl System,SUCCESS,,,CRITICAL: Windows System event log cleared by attacker
+2026-05-12 01:23:20,Windows-Security,1102,Audit Log Cleared,WS-FIN-04,185.220.101.12,,,,TCP,finance-admin,,,SUCCESS,,,Security audit log was cleared - anti-forensics
+2026-05-12 01:24:10,Windows-Security,4634,Logoff,WS-FIN-04,185.220.101.12,,54821,3389,TCP,finance-admin,,,SUCCESS,,,Attacker disconnected RDP session
+2026-05-12 01:24:30,Firewall,,,FW-01,185.220.101.12,192.168.1.25,55001,3389,TCP,,,,,,,BLOCK: RDP connection attempt blocked - RDP-Limit-Exceeded rule triggered
+2026-05-12 01:25:00,IDS,,,IDS-01,185.220.101.12,192.168.1.25,,,TCP,,,,,,,ALERT: Brute force pattern detected from 185.220.101.12 - 10 failures before success
+2026-05-12 01:25:10,IDS,,,IDS-01,192.168.1.25,45.77.22.91,,,TCP,,,,,,,ALERT: Exfiltration confirmed - 1.6GB transferred to threat actor IP 45.77.22.91
+2026-05-12 01:30:00,Windows-Security,4624,Successful Login,WS-FIN-04,192.168.1.25,,49400,3389,TCP,svc_backup2,,,SUCCESS,,,Backdoor account svc_backup2 still active after attacker left
+2026-05-12 01:35:00,Windows-Security,4624,Successful Login,WS-IT-03,192.168.1.25,,49410,445,TCP,svc_backup2,,,SUCCESS,,,Backdoor account accessing IT systems
+2026-05-12 01:40:00,DNS,,,DNS-01,192.168.1.25,,,53,UDP,,,,,,,DNS query: update.microsoft-cdn.net resolved 45.77.22.91 - C2 beacon
+2026-05-12 01:40:05,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49500,443,TCP,,,,,1024,,C2 beacon - small periodic callback to attacker server
+2026-05-12 01:55:00,DNS,,,DNS-01,192.168.1.25,,,53,UDP,,,,,,,DNS query: update.microsoft-cdn.net resolved 45.77.22.91 - C2 beacon
+2026-05-12 01:55:05,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49510,443,TCP,,,,,1024,,C2 beacon continuing every 15 minutes
+2026-05-12 02:10:00,DNS,,,DNS-01,192.168.1.25,,,53,UDP,,,,,,,DNS query: update.microsoft-cdn.net resolved 45.77.22.91 - C2 beacon
+2026-05-12 02:10:05,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49520,443,TCP,,,,,1024,,C2 beacon
+2026-05-12 02:25:00,DNS,,,DNS-01,192.168.1.25,,,53,UDP,,,,,,,DNS query: update.microsoft-cdn.net resolved 45.77.22.91 - C2 beacon
+2026-05-12 02:25:05,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49530,443,TCP,,,,,1024,,C2 beacon
+2026-05-12 02:40:00,DNS,,,DNS-01,192.168.1.25,,,53,UDP,,,,,,,DNS query: update.microsoft-cdn.net resolved 45.77.22.91 - C2 beacon
+2026-05-12 02:40:05,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49540,443,TCP,,,,,1024,,C2 beacon
+2026-05-12 02:55:00,DNS,,,DNS-01,192.168.1.25,,,53,UDP,,,,,,,DNS query: update.microsoft-cdn.net resolved 45.77.22.91 - C2 beacon
+2026-05-12 02:55:05,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49550,443,TCP,,,,,1024,,C2 beacon
+2026-05-12 03:10:00,Windows-Security,4624,Successful Login,WS-FIN-04,192.168.1.25,,49600,3389,TCP,svc_backup2,,,SUCCESS,,,Backdoor account active - 2 hours after initial attack
+2026-05-12 03:30:00,Windows-Security,4688,Process Created,WS-FIN-04,192.168.1.25,,,,TCP,svc_backup2,powershell.exe,powershell.exe -enc TgBlAHcALQBPAGIAagBlAGMAdAA=,SUCCESS,,,Backdoor account running encoded commands
+2026-05-12 04:00:00,Windows-Security,4624,Successful Login,WS-FIN-04,192.168.1.25,,49700,3389,TCP,svc_backup2,,,SUCCESS,,,Backdoor account still active 3hrs after attack
+2026-05-12 06:00:05,Windows-Security,4624,Successful Login,WS-FIN-04,10.10.1.5,,49800,445,TCP,john.adeyemi,,,SUCCESS,,,Legitimate user john.adeyemi logs in for work day
+2026-05-12 06:01:10,Windows-Security,4688,Process Created,WS-FIN-04,10.10.1.5,,,,TCP,john.adeyemi,EXCEL.EXE,EXCEL.EXE C:\Finance\Budget_2026.xlsx,FAILURE,,,File not found - attacker deleted files
+2026-05-12 06:02:00,Windows-Security,4688,Process Created,WS-FIN-04,10.10.1.5,,,,TCP,john.adeyemi,explorer.exe,explorer.exe C:\Finance\Q1_Reports,FAILURE,,,Directory empty - data was stolen
+2026-05-12 06:03:30,Windows-Security,4624,Successful Login,WS-HR-01,10.10.1.8,,49810,445,TCP,amina.bello,,,SUCCESS,,,Normal morning login HR user
+2026-05-12 06:05:00,Windows-Security,4624,Successful Login,WS-ACCT-03,10.10.1.20,,49820,445,TCP,tunde.fashola,,,SUCCESS,,,Normal morning login
+2026-05-12 06:07:00,Windows-Security,4688,Process Created,WS-FIN-04,10.10.1.5,,,,TCP,john.adeyemi,OUTLOOK.EXE,OUTLOOK.EXE,SUCCESS,,,User opens Outlook to report missing files
+2026-05-12 06:10:00,Windows-Security,4624,Successful Login,WS-MGR-01,10.10.1.33,,49830,445,TCP,ngozi.eze,,,SUCCESS,,,Manager logs in for work day
+2026-05-12 06:15:00,Windows-Security,4624,Successful Login,WS-IT-02,10.10.1.12,,49840,445,TCP,chidi.okonkwo,,,SUCCESS,,,IT admin logs in
+2026-05-12 06:20:00,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49560,443,TCP,,,,,1024,,C2 beacon still running during business hours
+2026-05-12 06:35:00,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49570,443,TCP,,,,,1024,,C2 beacon
+2026-05-12 06:50:00,Firewall,,,FW-01,192.168.1.25,45.77.22.91,49580,443,TCP,,,,,1024,,C2 beacon
+2026-05-12 07:05:00,Windows-Security,4624,Successful Login,WS-FIN-04,192.168.1.25,,49900,3389,TCP,svc_backup2,,,SUCCESS,,,Backdoor account still active 6hrs after attack - not yet detected
+2026-05-12 07:30:00,IDS,,,IDS-01,192.168.1.25,45.77.22.91,,,TCP,,,,,,,ALERT: Recurring C2 beacon pattern detected - 15 minute intervals to 45.77.22.91
+2026-05-12 07:35:00,IDS,,,IDS-01,192.168.1.25,45.77.22.91,,,TCP,,,,,,,ALERT: Threat intelligence match - 45.77.22.91 listed on abuse.ch blocklist
